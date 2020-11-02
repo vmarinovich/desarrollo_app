@@ -1,0 +1,48 @@
+
+
+add_action( 'woocommerce_single_product_summary', 
+
+"dcms_caracteristicas_producto", 8 );
+
+function dcms_caracteristicas_producto(){
+   
+  if (function_exists('get_field')){
+    echo "<p><strong>Edición:</strong> ". get_field('edicion')."</p>"; 
+    
+  
+}
+
+
+
+// Codigo ejemplo
+
+add_action( 'woocommerce_after_add_to_cart_button', function() {
+    $builder_product_link = 'https://tu_dominio.xxx/pagina_destino/';
+    ?>
+
+    <a class="button" href="">
+
+    <?php
+} );
+
+// Codigo creado
+
+add_action( 'woocommerce_after_add_to_cart_button',
+function() { 
+    $builder_product_link = get_field( 'Ver Demo' ); ?>
+    <a class="button" href="<?php echo esc_url( $Ver_Demo['url'] );
+     ?>" target="<?php echo esc_attr( $Ver_Demo['target'] ); ?>"><?php echo esc_html( $Ver_Demo['title'] ); ?></a>
+<?php endif; ?>
+<?php
+} );
+
+     
+
+
+// Codigo Campo personalizado
+
+<?php $Ver_Demo = get_field( 'Ver Demo' ); ?>
+<?php if ( $Ver_Demo ) : ?>
+	<a href="<?php echo esc_url( $Ver_Demo['url'] ); ?>" 
+    target="<?php echo esc_attr( $Ver_Demo['target'] ); ?>"><?php echo esc_html( $Ver_Demo['title'] ); ?></a>
+<?php endif; ?>

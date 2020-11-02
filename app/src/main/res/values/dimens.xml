@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <dimen name="AltLogo">200dp</dimen>
+    <dimen name="Logo">40dp</dimen>
+    <dimen  name="cardCornerRadius">8dp</dimen>
+    <dimen name="altoImagen">150dp</dimen>
+    <dimen name="TamañoTitulo">20sp</dimen>
+    <dimen name="TamañoTexto">15sp</dimen>
+    <dimen name="marginhomesub">15dp</dimen>
+    <dimen name="ItemScheduleTitulo">30sp</dimen>
+    <dimen name="ItemScheduleSubTitulo">20sp</dimen>
+
+
+
+</resources>

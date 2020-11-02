@@ -1,0 +1,2 @@
+// Chat Cookie Data
+var FirstName="{{ contact.firstname }}",LastName="{{ contact.lastname }}",Email="{{ contact.email }}",Company="{{ contact.company }}",Employees="{{contact.employees__c}}",Role="{{contact.role__c}}",MarketingCompanyAuto="{{contact.marketing_company_auto__c}}",LifecycleStage="{{contact.lifecyclestage}}",InferBand="{{contact.infer_band}}";

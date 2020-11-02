@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="7dp"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    android:layout_margin="@dimen/marginhomesub">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearlo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgCard1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/altoImagen"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de Expositor"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/TamañoTitulo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trabajo de Expositor"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/TamañoTexto" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

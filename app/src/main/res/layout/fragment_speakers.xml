@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.ScheduleFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSpeaker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:id="@+id/rlBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:alpha="0.4"/>
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+</FrameLayout>

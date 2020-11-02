@@ -1,0 +1,6 @@
+// Pre procesado
+
+
+Import numpy as np
+import pandas as pd
+
